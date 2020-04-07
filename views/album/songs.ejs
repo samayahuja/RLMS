@@ -1,0 +1,265 @@
+<%- include("../partials/header") %>
+
+<div>
+	<div class="row">
+		<div class="col-md-3">
+			<h1 class="headings">
+				Darl Souls
+			</h1>
+			<p class="lead headings">
+				<%= album.name %>
+			</p>
+		</div>
+		<div class="col-md-9">
+			<div class="thumbnail">
+				<div class="caption-full">
+					<h4>
+						<a><%= album.name %></a>
+					</h4>
+					<h5>
+						<a><%= album.artist %></a>
+					</h5>
+					<table>
+						<thead>
+							<tr>
+								<th>Song Name</th>
+								<th>Price</th>
+								<th>Purchase Links</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% if (album.song1 != "Null") { %>
+								<tr>
+									<td><%= album.song1 %></td>
+									<td>$<%= album.song1prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song2 != "Null") { %>
+								<tr>
+									<td><%= album.song2 %></td>
+									<td>$<%= album.song2prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song3 != "Null") { %>
+								<tr>
+									<td><%= album.song3 %></td>
+									<td>$<%= album.song3prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song4 != "Null") { %>
+								<tr>
+									<td><%= album.song4 %></td>
+									<td>$<%= album.song4prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song5 != "Null") { %>
+								<tr>
+									<td><%= album.song5 %></td>
+									<td>$<%= album.song5prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song6 != "Null") { %>
+								<tr>
+									<td><%= album.song6 %></td>
+									<td>$<%= album.song6prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song7 != "Null") { %>
+								<tr>
+									<td><%= album.song7 %></td>
+									<td>$<%= album.song7prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song8 != "Null") { %>
+								<tr>
+									<td><%= album.song8 %></td>
+									<td>$<%= album.song8prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song9 != "Null") { %>
+								<tr>
+									<td><%= album.song9 %></td>
+									<td>$<%= album.song9prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song10 != "Null") { %>
+								<tr>
+									<td><%= album.song10 %></td>
+									<td>$<%= album.song10prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song11 != "Null") { %>
+								<tr>
+									<td><%= album.song11 %></td>
+									<td>$<%= album.song11prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song12 != "Null") { %>
+								<tr>
+									<td><%= album.song12 %></td>
+									<td>$<%= album.song12prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song13 != "Null") { %>
+								<tr>
+									<td><%= album.song13 %></td>
+									<td>$<%= album.song13prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song14 != "Null") { %>
+								<tr>
+									<td><%= album.song14 %></td>
+									<td>$<%= album.song14prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song15 != "Null") { %>
+								<tr>
+									<td><%= album.song15 %></td>
+									<td>$<%= album.song15prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song16 != "Null") { %>
+								<tr>
+									<td><%= album.song16 %></td>
+									<td>$<%= album.song16prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song17 != "Null") { %>
+								<tr>
+									<td><%= album.song17 %></td>
+									<td>$<%= album.song17prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song18 != "Null") { %>
+								<tr>
+									<td><%= album.song18 %></td>
+									<td>$<%= album.song18prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song19 != "Null") { %>
+								<tr>
+									<td><%= album.song19 %></td>
+									<td>$<%= album.song19prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song20 != "Null") { %>
+								<tr>
+									<td><%= album.song20 %></td>
+									<td>$<%= album.song20prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song21 != "Null") { %>
+								<tr>
+									<td><%= album.song21 %></td>
+									<td>$<%= album.song21prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song22 != "Null") { %>
+								<tr>
+									<td><%= album.song22 %></td>
+									<td>$<%= album.song22prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song23 != "Null") { %>
+								<tr>
+									<td><%= album.song23 %></td>
+									<td>$<%= album.song23prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song24 != "Null") { %>
+								<tr>
+									<td><%= album.song24 %></td>
+									<td>$<%= album.song24prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+							<% if (album.song25 != "Null") { %>
+								<tr>
+									<td><%= album.song25 %></td>
+									<td>$<%= album.song25prize %></td>
+									<% if (currentUser) { %>
+										<td><a href="#" class="btn btn-xs btn-success">Purchase</a></td>
+									<% } %>
+								</tr>
+							<% } %>
+						</tbody>
+					</table>
+					<a class="btn btn-lg btn-danger" href="/albums/<%= album._id %>">Back</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

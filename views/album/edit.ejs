@@ -1,0 +1,186 @@
+<%- include("../partials/header") %>
+
+<div>
+	<div class="row">
+		<h1 class="headings">
+			Edit <%= album.name %>
+		</h1>
+		<div style="width:30%; margin: 35px auto;">
+			<form action="/albums/<%= album._id %>?_method=put" method="post">
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[name]" value="<%= album.name %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[artist]" value="<%= album.artist %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="number" name="album[price]" min="0.01" step="0.01" value="<%= album.price %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[image]" value="<%= album.image %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[description]" value="<%= album.description %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song1]" value="<%= album.song1 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song1prize]" value="<%= album.song1prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song2]" value="<%= album.song2 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song2prize]" value="<%= album.song2prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song3]" value="<%= album.song3 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song3prize]" value="<%= album.song3prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song4]" value="<%= album.song4 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song4prize]" value="<%= album.song4prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song5]" value="<%= album.song5 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song5prize]" value="<%= album.song5prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song6]" value="<%= album.song6 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song6prize]" value="<%= album.song6prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song7]" value="<%= album.song7 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song7prize]" value="<%= album.song7prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song8]" value="<%= album.song8 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song8prize]" value="<%= album.song8prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song9]" value="<%= album.song9 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song9prize]" value="<%= album.song9prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song10]" value="<%= album.song10 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song10prize]" value="<%= album.song10prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song11]" value="<%= album.song11 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song11prize]" value="<%= album.song11prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song12]" value="<%= album.song12 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song12prize]" value="<%= album.song12prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song13]" value="<%= album.song13 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song13prize]" value="<%= album.song13prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song14]" value="<%= album.song14 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song14prize]" value="<%= album.song14prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song15]" value="<%= album.song15 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song15prize]" value="<%= album.song15prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song16]" value="<%= album.song16 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song16prize]" value="<%= album.song16prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song17]" value="<%= album.song17 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song17prize]" value="<%= album.song17prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song18]" value="<%= album.song18 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song18prize]" value="<%= album.song18prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song19]" value="<%= album.song19 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song19prize]" value="<%= album.song19prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song20]" value="<%= album.song20 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song20prize]" value="<%= album.song20prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song21]" value="<%= album.song21 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song21prize]" value="<%= album.song21prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song22]" value="<%= album.song22 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song22prize]" value="<%= album.song22prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song23]" value="<%= album.song23 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song23prize]" value="<%= album.song23prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song24]" value="<%= album.song24 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song24prize]" value="<%= album.song24prize %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song25]" value="<%= album.song25 %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="album[song25prize]" value="<%= album.song25prize %>">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-primary btn-block">
+						Update <%= album.name %>
+					</button>
+				</div>
+			</form>
+			<a class="btn btn-lg btn-danger" href="/albums/<%= album._id %>">Back</a>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

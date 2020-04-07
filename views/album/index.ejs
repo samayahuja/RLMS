@@ -1,0 +1,41 @@
+<%- include("../partials/header") %>
+
+<div>
+	
+	<header class="jumbotron">
+		<div class="container">
+			<h1>
+				Welcome to the Dark Souls Albums Page!!!
+			</h1>
+			<p>
+				View our Artist's Finest Albums!
+			</p>
+			<% if (currentUser && currentUser.username == "Admin") { %>
+				<p>
+					<a href="/albums/new" class="btn btn-primary btn-lg">Add New Albums</a>
+				</p>
+			<% } %>
+		</div>
+	</header>
+
+	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		<div class="col-lg-12">
+			<% albums.forEach(function(album) { %>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="<%= album.image %>">
+						<div class="caption">
+							<h4><%= album.name %></h4>
+							<h5><%= album.artist %></h5>
+						</div>
+						<p>
+							<a href="/albums/<%= album._id %>" class="btn btn-primary">More Info</a>
+						</p>
+					</div>
+				</div>
+			<% }); %>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

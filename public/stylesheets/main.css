@@ -1,0 +1,51 @@
+body {
+  /* The image used */
+  background-image: url("music.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table, th, td {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black; 
+	border-collapse: collapse;
+}
+
+th {
+	background-color: grey;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+
+.delete-form {
+	display: inline;
+}
+
+.btn {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.headings {
+	color: white;
+	text-align: center;
+}
